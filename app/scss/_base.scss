@@ -1,0 +1,113 @@
+// Breakpoints
+$bp-largest: 81.25em; // 1300px
+$bp-large: 62.5em; // 1000px
+$bp-medium-semi: 50em; // 800px
+$bp-medium: 43.75em; // 700px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+// Color variables
+$primary-color: #00ed82;
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  background-color: #000;
+  color: white;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: #ccc;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background-color: $primary-color;
+  color: white;
+}
+
+.heading-1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 5rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.6rem;
+  font-weight: 300;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 3rem;
+  }
+}
+
+.heading-4 {
+  min-width: 100%;
+  margin-bottom: 2em;
+  font-size: 1.3rem;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.legal-text {
+  font-size: 1.2rem;
+  color: #eee;
+  padding-top: 1.8em;
+
+  &--ligth {
+    color: white;
+  }
+}
+
+.sub-text {
+  font-size: 2.2rem;
+  max-width: 33.33em;
+  margin: 0 auto;
+  margin-bottom: 1.2em;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+}
+
+.sub-title {
+  font-size: 1.6rem;
+}

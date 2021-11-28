@@ -1,0 +1,31 @@
+.live {
+  background-color: #151516;
+  padding: 4em;
+
+  &__container {
+    border: $primary-color solid 4px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10em 8em;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 5em 2em;
+    }
+  }
+
+  .sub-text {
+    text-align: justify;
+  }
+
+  &__link {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 1em;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}

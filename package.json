@@ -1,0 +1,25 @@
+{
+  "name": "hulu-landing-page",
+  "version": "1.0.0",
+  "description": "Hulu Landing Page Clone built by Ali Farajzade",
+  "default": "index.html",
+  "scripts": {
+    "sass:watch": "node-sass ./app/scss/main.scss ./app/css/style.css -w",
+    "devserver": "live-server --no-browser",
+    "start": "npm-run-all --parallel devserver sass:watch",
+    "build": "parcel build ./index.html"
+  },
+  "author": "Ali Farajzade",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@parcel/babel-preset-env": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.1",
+    "postcss-preset-env": "^7.0.1"
+  }
+}

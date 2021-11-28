@@ -1,0 +1,42 @@
+.footer {
+  background-color: rgba(245, 245, 245, 0.938);
+  padding: 5em 7em;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 2em;
+
+  @media only screen and (max-width: $bp-medium-semi) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em 2em;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+    padding: 5em 2em;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-head {
+    color: #333;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  > ul {
+    > li {
+      font-size: 1.65rem;
+      > a {
+        color: #333;
+        > i {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1.3em 2em;
+  min-width: 9.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &--cta {
+    border: none;
+    background: white;
+    color: #333;
+
+    &:hover {
+      filter: brightness(85%);
+    }
+  }
+
+  &--outline {
+    border: 2px white solid;
+    padding: 1em 1.7em;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+}
+
+.btn--login {
+  display: inline-block;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
